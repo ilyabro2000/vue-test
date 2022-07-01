@@ -1,0 +1,24 @@
+/* media */
+$breakpoints: (
+  xs-mobile: 360px,
+  mobile: 767px,
+  tablet: 1024px,
+  laptop: 1440px,
+  desktop: 1920px,
+);
+
+/* transitions */
+$default-transition: .3s ease-in-out;
+
+/* colors */
+$base-color: #4975a0;
+$additional-color: #4975A0FF;
+$font-color: #57595EFF;
+$cell-color: #5c5e5f;
+$gray: #DEE0E0FF;
+$light-gray: #ebecf1;
+$bg-color: #dee0e0;
+$red: #FE3359FF;
+
+/* fonts */
+$base-font: "Pacifico", cursive;

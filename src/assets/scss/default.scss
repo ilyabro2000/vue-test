@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  overflow-y: auto;
+  min-height: 100vh;
+  font-family: $base-font;
+  background: linear-gradient($cell-color, transparent 1px),
+  linear-gradient(90deg, $cell-color, transparent 1px);
+  background-size: 25px 25px;
+  background-position: center center;
+  color: $font-color;
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: 5rem;
+    background-color: gray;
+  }
+
+  &::-webkit-scrollbar {
+    width: 7px;
+    height: 7px;
+    background-color: transparent;
+  }
+}
+
+html {
+  font-size: .52083333vw;
+
+  @include respond-to(laptop) {
+    font-size: .6944444444vw;
+  }
+
+  @include respond-to(tablet) {
+    font-size: 10px;
+  }
+}

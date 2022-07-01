@@ -1,0 +1,36 @@
+/* fade */
+.fade-enter-active,
+.fade-leave-active {
+  opacity: 1;
+  transition: opacity $default-transition;
+}
+
+.fade-enter,
+.fade-leave-active {
+  opacity: 0;
+}
+
+/* dropdown */
+.dropdown-enter-active,
+.dropdown-leave-active {
+  transition: .4s;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.dropdown-enter,
+.dropdown-leave-to {
+  opacity: .5;
+  clip-path: polygon(0 0, 100% 0, 100% 0%, 0 0%);
+}
+
+/* error */
+.error-enter-active,
+.error-leave-active {
+  transition: opacity $default-transition, transform $default-transition;
+}
+
+.error-enter,
+.error-leave-active {
+  opacity: 0;
+  transform: translateY(15%);
+}
